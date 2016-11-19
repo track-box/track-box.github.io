@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Trackbox</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		html, body { position:fixed; top:0; left:0; right:0; bottom:0; }
+		body { margin:0; padding:0; }
+		#map { position:absolute; top:0; bottom:0; width:100%; }
+	</style>
+</head>
+
+<body>
+	<div id="app"></div>
+	<div id="map"></div>
+
+	<script src="//maps.google.com/maps/api/js?v=3&key=AIzaSyChuaneGgTfTzlwUdqAGw7ns6cJTIQEbGg&libraries=geometry"></script>
+	<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="../lib/trackbox-map.js"></script>
+	<script src="../lib/trackbox-goal.js"></script>
+	<script src="../lib/trackbox-goals.js"></script>
+	<script src="../lib/trackbox-track.js"></script>
+
+	<script src="bundle.js"></script>
+
+	<script>
+		$(function(){
+			window.track = new TrackboxTrack("", "map");
+		});
+	</script>
+
+</body>
+</html>
